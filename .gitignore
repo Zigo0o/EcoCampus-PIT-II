@@ -1,0 +1,15 @@
+
+# Dependências do Node.js
+node_modules/
+
+# Banco de dados e arquivos temporários do SQLite
+database/*.db
+database/*.db-journal
+database/*.db-shm
+database/*.db-wal
+
+# Configurações locais e segredos
+.env
+
+# Arquivos de log
+*.log

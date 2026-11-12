@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | EcoCampus</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="dashboard.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <nav class="menu">
+      <h2>🌱 EcoCampus</h2>
+      <div>
+        <a href="index.html">Início</a>
+        <a href="index.html#dicas">Dicas</a>
+        <a href="questionario.html">Questionário</a>
+        <a href="dashboard.html">Resultados</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="conteudo">
+    <h1>Painel de Resultados</h1>
+    <p>Confira os hábitos sustentáveis dos participantes.</p>
+
+    <section class="cards dashboard-cards">
+      <article class="card">
+        <h3>Total de respostas</h3>
+        <p id="total">--</p>
+      </article>
+
+      <article class="card">
+        <h3>Pontuação média</h3>
+        <p id="media">--</p>
+      </article>
+
+      <article class="card">
+        <h3>Pontuação alta</h3>
+        <p id="alto">--</p>
+      </article>
+    </section>
+
+    <section class="grafico">
+      <h2>Distribuição das pontuações</h2>
+      <div class="linha-grafico">
+        <span>Baixa (0–4)</span>
+        <div class="barra-container">
+          <div class="barra baixa" id="barra-baixa"></div>
+        </div>
+        <strong id="valor-baixo">0</strong>
+      </div>
+
+      <div class="linha-grafico">
+        <span>Média (5–7)</span>
+        <div class="barra-container">
+          <div class="barra media" id="barra-media"></div>
+        </div>
+        <strong id="valor-medio">0</strong>
+      </div>
+
+      <div class="linha-grafico">
+        <span>Alta (8–10)</span>
+        <div class="barra-container">
+          <div class="barra alta" id="barra-alta"></div>
+        </div>
+        <strong id="valor-alto">0</strong>
+      </div>
+    </section>
+
+    <p id="erro-dashboard" role="alert"></p>
+  </main>
+
+  <footer>
+    <p>EcoCampus © 2026 | Projeto Acadêmico - ODS 12</p>
+  </footer>
+
+</body>
+</html>

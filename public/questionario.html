@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questionário | EcoCampus</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="questionario.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <nav class="menu">
+      <h2>🌱 EcoCampus</h2>
+      
+       <div>
+        <a href="index.html">Início</a>
+        <a href="index.html#dicas">Dicas</a>
+        <a href="questionario.html">Questionário</a>
+        <a href="dashboard.html">Resultados</a>
+        </div>
+
+    </nav>
+  </header>
+
+  <main class="conteudo">
+    <h1>Questionário de Consumo Consciente</h1>
+    <p>Responda às perguntas sobre seus hábitos sustentáveis.</p>
+
+    <form id="form-questionario">
+
+      <div class="pergunta">
+        <h3>1. Você separa o lixo reciclável?</h3>
+        <label><input type="radio" name="q1" value="Sempre" required> Sempre</label>
+        <label><input type="radio" name="q1" value="Às vezes"> Às vezes</label>
+        <label><input type="radio" name="q1" value="Nunca"> Nunca</label>
+      </div>
+
+      <div class="pergunta">
+        <h3>2. Você evita desperdício de água?</h3>
+        <label><input type="radio" name="q2" value="Sempre" required> Sempre</label>
+        <label><input type="radio" name="q2" value="Às vezes"> Às vezes</label>
+        <label><input type="radio" name="q2" value="Nunca"> Nunca</label>
+      </div>
+
+      <div class="pergunta">
+        <h3>3. Você utiliza materiais reutilizáveis?</h3>
+        <label><input type="radio" name="q3" value="Sempre" required> Sempre</label>
+        <label><input type="radio" name="q3" value="Às vezes"> Às vezes</label>
+        <label><input type="radio" name="q3" value="Nunca"> Nunca</label>
+      </div>
+
+      <div class="pergunta">
+        <h3>4. Você evita desperdício de alimentos?</h3>
+        <label><input type="radio" name="q4" value="Sempre" required> Sempre</label>
+        <label><input type="radio" name="q4" value="Às vezes"> Às vezes</label>
+        <label><input type="radio" name="q4" value="Nunca"> Nunca</label>
+      </div>
+
+      <div class="pergunta">
+        <h3>5. Você procura reduzir o consumo de plástico?</h3>
+        <label><input type="radio" name="q5" value="Sempre" required> Sempre</label>
+        <label><input type="radio" name="q5" value="Às vezes"> Às vezes</label>
+        <label><input type="radio" name="q5" value="Nunca"> Nunca</label>
+      </div>
+
+      <button type="submit">Enviar respostas</button>
+      <div id="resultado" role="status" aria-live="polite"></div>
+    </form>
+  </main>
+
+  <footer>
+    <p>EcoCampus © 2026 | Projeto Acadêmico - ODS 12</p>
+  </footer>
+
+</body>
+</html>
