@@ -1,15 +1,20 @@
+
 {
   "name": "ecocampus",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Sistema web de conscientizacao sobre consumo sustentavel",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "engines": {
+  "node": "26.13.1"
+},
   "dependencies": {
     "express": "^5.3.0"
   }
